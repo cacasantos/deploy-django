@@ -12,8 +12,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 import django_heroku
 import os
 
-# Activate Django-Heroku.
-django_heroku.settings(locals())
+
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -128,3 +127,6 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, MEDIA_URL)
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
